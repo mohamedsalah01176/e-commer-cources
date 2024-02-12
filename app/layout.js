@@ -4,7 +4,7 @@ import Header from "./_componaten/header/Header";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Footer from "./_componaten/footer/Footer";
 import NextTopLoader from "nextjs-toploader";
-import { ClerkProvider } from '@clerk/nextjs'
+// import { ClerkProvider } from '@clerk/nextjs'
 import "./globals.css";
 
 import { useState } from "react";
