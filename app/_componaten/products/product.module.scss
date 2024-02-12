@@ -1,0 +1,9 @@
+.card{
+    transition: .5s;
+    box-shadow: 0 5px 10px #aaa8a8;
+    text-decoration: none;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 5px 10px #212020;
+    }
+}
