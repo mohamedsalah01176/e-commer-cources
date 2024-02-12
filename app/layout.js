@@ -4,7 +4,7 @@ import Header from "./_componaten/header/Header";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Footer from "./_componaten/footer/Footer";
 import NextTopLoader from "nextjs-toploader";
-// import { ClerkProvider } from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
 import "./globals.css";
 
 import { useState } from "react";
@@ -21,7 +21,7 @@ const inter = Roboto({ subsets: ["latin"],weight:["100","300","400"] });
 export default function RootLayout({ children }) {
   const [card,setCard]=useState([])
   return (
-    // <ClerkProvider>
+    <ClerkProvider>
       <CartContext.Provider value={{card,setCard}}>
         <html lang="en">
           <body className={inter.className}>
@@ -32,6 +32,6 @@ export default function RootLayout({ children }) {
             </body>
         </html>
       </CartContext.Provider>
-    // </ClerkProvider>
+    </ClerkProvider>
   ); 
 }
