@@ -21,7 +21,7 @@ const inter = Roboto({ subsets: ["latin"],weight:["100","300","400"] });
 export default function RootLayout({ children }) {
   const [card,setCard]=useState([])
   return (
-    <ClerkProvider>
+    // <ClerkProvider>
       <CartContext.Provider value={{card,setCard}}>
         <html lang="en">
           <body className={inter.className}>
@@ -32,6 +32,6 @@ export default function RootLayout({ children }) {
             </body>
         </html>
       </CartContext.Provider>
-    </ClerkProvider>
+    // </ClerkProvider>
   ); 
 }
